@@ -5,6 +5,7 @@
 ###################
 
 import discord
+import os
 import requests
 
 client = discord.Client()
@@ -38,4 +39,4 @@ async def on_message(message):
         await message.channel.send(embed=embed)
 
 
-client.run('NzgxNzI3NjA0MTQyMTEyNzY5.X8B2kA.m6z1dZABxy12VHBBjDLwVnYGLpU')
+client.run(os.environ['token'])
